@@ -11,19 +11,17 @@ const defaultFormFeilds ={
 
 const Signin = ( ) => {
     const [formFields, setFormFields] = useState(defaultFormFeilds);
-
-    const {displayName, email, password, confirmPassword} = formFields;
+    const {email, password} = formFields;
 
     const signInWithGoogle = async(e) =>{
-        const {user} = await signInWithGooglePopup();
-        await createUserDocumentFromAuth(user);
+        await signInWithGooglePopup();    
     }
     
     const handleSubmit = async (e) =>{
         e.preventDefault();
 
         try{
-            const response = await signInAuthUserWithEmailAndPassword(email, password)
+            const {user} = await signInAuthUserWithEmailAndPassword(email, password)
             setFormFields(defaultFormFeilds);
         }catch(error){
             switch (error.code) {
@@ -50,8 +48,8 @@ const Signin = ( ) => {
 
     return(
         <div className="sign-up-container">
-            <h2>Don't have an Account</h2>
-            <span>Sign up with ur email and password</span>
+            <h2>Already have an Account ?</h2>
+            <span>Sign in with your email and password</span>
             <form onSubmit={handleSubmit}> 
                 <Forminput label="Email" type="email" name="email" value={email} onChange={handleChange} required/>
                 <Forminput label="Passowrd" type="password" name="password" value={password} onChange={handleChange} required/>

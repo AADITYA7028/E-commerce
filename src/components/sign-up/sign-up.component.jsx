@@ -16,7 +16,6 @@ const Signup = ( ) => {
 
     const {displayName, email, password, confirmPassword} = formFields;
 
-    
     const handleSubmit = async (e) =>{
         e.preventDefault();
 
@@ -27,7 +26,7 @@ const Signup = ( ) => {
 
         try{
             const {user} = await createAuthUserWithEmailAndPassword(email, password);
-            console.log(user);
+
             await createUserDocumentFromAuth(user, {displayName})
             setFormFields(defaultFormFeilds);
     
@@ -49,7 +48,7 @@ const Signup = ( ) => {
     return(
         <div className="sign-up-container">
             <h2>Don't have an Account</h2>
-            <span>Sign up with ur email and password</span>
+            <span>Sign up with your email and password</span>
             <form onSubmit={handleSubmit}>
                 <Forminput label="Display name" type="text" name="displayName" value={displayName} onChange={handleChange} required/>
                 <Forminput label="Email" type="email" name="email" value={email} onChange={handleChange} required/>
