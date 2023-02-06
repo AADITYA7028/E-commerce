@@ -8,8 +8,6 @@ import {getFirestore, doc, getDoc,
         query, getDocs} from "firebase/firestore"
 
 
-
-
 const firebaseConfig = {
     apiKey: "AIzaSyANA46F7ccykpesFKEdLo7kPpOC8zFh9e0",
     authDomain: "crwn-db-83edf.firebaseapp.com",
@@ -19,6 +17,7 @@ const firebaseConfig = {
     appId: "1:640593276818:web:45c326f9cb5677d2ad1b4b"
 };
 
+
 const firebaseApp = initializeApp(firebaseConfig);
 
 const provider = new GoogleAuthProvider();
@@ -27,7 +26,7 @@ provider.setCustomParameters({
 });
 
 export const auth = getAuth();
-export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
+export const signInWithGooglePopup = () => signInWithPopup(auth, provider).catch((error) => alert(error.message));
 
 export const db = getFirestore();
 
