@@ -11,6 +11,7 @@ import { setCurrentUser } from './store/user/user.action';
 import { useDispatch } from 'react-redux';
 
 const App = () => {
+  console.log("////app render////")
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -19,6 +20,7 @@ const App = () => {
         createUserDocumentFromAuth(user);
       }
       dispatch(setCurrentUser(user));
+      console.log("////userEffect")
     }); 
     return unsubscribe;
   }, []);
