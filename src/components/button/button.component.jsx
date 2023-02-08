@@ -16,7 +16,7 @@ const getButton = (buttonType = BUTTON_TYPE_CLASSES.gogoole) => (
 
 const Button = ({buttonType, children, ...otherprops}) => {
     const CustomButton = getButton(buttonType);
-    return (<CustomButton {...otherprops}>{children}</CustomButton>)
+    return <CustomButton {...otherprops}>{children}</CustomButton>
 }
 
 export default Button;
