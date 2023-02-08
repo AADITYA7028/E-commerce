@@ -11,7 +11,6 @@ import { selectCurrentUser } from "../../store/user/user.selector";
 
 const Navigation = () => {
     const {isCartOpen} = useContext(CartContext);
-    console.log("////Navigation render////")
     const currentUser = useSelector(selectCurrentUser);
 
     return(
