@@ -49,6 +49,19 @@ export const onAuthStateChangedListener = (callback) => {
     onAuthStateChanged(auth, callback)
 }
 
+export const getCurrentUser = () => {
+    return new Promise((resolve, reject) =>{
+        const unsub = onAuthStateChanged(
+            auth,
+            (userAuth) =>{
+                unsub();
+                resolve(userAuth);
+            },
+            reject
+        )
+    })
+}
+
 
 ///////////////
 
@@ -95,5 +108,5 @@ export const createUserDocumentFromAuth = async (user, additionalInformaton) => 
         }
     }
 
-    return userDocRef;
+    return userSnapshot;
 }
