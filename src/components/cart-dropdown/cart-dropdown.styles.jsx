@@ -14,6 +14,7 @@ export const CartDropdownContainer = styled.div`
   top: 90px;
   right: 40px;
   z-index: 5;
+
   ${Button} {
     margin-top: auto;
   }
@@ -28,5 +29,14 @@ export const CartItems = styled.div`
   height: 240px;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  align-items: space-between;
+
+  @media screen and (max-width: 480px){
+    margin-top: 20px ;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: 100%;
+    border-left: 1px dashed rgba(136, 165, 191, 0.48);
+  }
 `;

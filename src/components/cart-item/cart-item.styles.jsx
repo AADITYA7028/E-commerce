@@ -8,7 +8,29 @@ export const CartItemContainer = styled.div`
   img {
     width: 30%;
   }
+
+  @media screen and (max-width: 480px){
+    width: 90%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px -5px;
+    img{
+      width: 200px;
+      height: 160px;
+      border-right: 1px dashed black;
+    }
+  }
 `;
+
+export const symbolContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+export const spanContanier = styled.span`
+  margin: 5px;
+  padding: 5px;
+`
 
 export const ItemDetails = styled.div`
   width: 70%;
@@ -19,5 +41,11 @@ export const ItemDetails = styled.div`
   padding: 10px 20px;
   span {
     font-size: 16px;
+  }
+
+  @media screen and (max-width: 480px){
+    height: 160px;
+    justify-content: space-between;
+
   }
 `;

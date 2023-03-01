@@ -7,6 +7,16 @@ export const CheckoutContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
+
+  @media screen and (max-width: 800px){
+    width: 70%;
+  }
+`;
+
+export const SmallContainer = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const CheckoutHeader = styled.div`
@@ -26,7 +36,14 @@ export const HeaderBlock = styled.div`
 `;
 
 export const Total = styled.span`
-  margin-top: 30px;
-  margin-left: auto;
+  margin :30px 0 30px auto ;
   font-size: 36px;
+
+  @media screen and (max-width: 480px){
+    margin: 10px auto 0 180px;
+    font-size: 27px;
+    padding: 10px;
+    border-top: 1px solid rgba(136, 165, 191, 0.48);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 0px 0px 0px, rgba(255, 255, 255, 0.8) -6px 0px 0px 0px;
+  }
 `;

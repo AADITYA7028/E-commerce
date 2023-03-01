@@ -1,5 +1,4 @@
 import {NavContainer, NavLink, NavLinks, LogoContainer} from "./navigation.styles";
-import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 import { ReactComponent as Logo} from "../../assets/Logo.svg"
 import { useSelector , useDispatch} from "react-redux";
@@ -19,7 +18,7 @@ const Navigation = () => {
     }
 
     return(
-        <Fragment>
+        <>
             <NavContainer>
                 <LogoContainer to="/">
                     <Logo className="logo"/>
@@ -34,7 +33,7 @@ const Navigation = () => {
                 {isCartOpen && <CartDropdown/> }
             </NavContainer>
             <Outlet/>
-        </Fragment>
+        </>
     )
 }
 

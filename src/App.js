@@ -1,4 +1,4 @@
-import './App.scss';
+import { GlobalStyle  } from './global.styles';
 import Home from './routes/home/home.components';
 import { Routes, Route } from "react-router-dom";
 import Navigation from './routes/navigation/navigation.component';
@@ -18,6 +18,8 @@ const App = () => {
   }, []);
   
   return (
+    <>
+    <GlobalStyle/>
     <Routes>
       <Route path='/' element={<Navigation/>} >
         <Route index element={<Home/>} />
@@ -26,6 +28,7 @@ const App = () => {
         <Route path='checkout' element={<Checkout/>} />
       </Route>
     </Routes>  
+    </>
   )
 };
 
