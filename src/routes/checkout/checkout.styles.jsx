@@ -40,8 +40,9 @@ export const Total = styled.span`
   font-size: 36px;
 
   @media screen and (max-width: 480px){
-    margin: 10px auto 0 180px;
-    font-size: 27px;
+    margin: 50px auto 0 200px;
+    font-size: 20px;
+    font-weight: bold;
     padding: 10px;
     border-top: 1px solid rgba(136, 165, 191, 0.48);
     box-shadow: rgba(136, 165, 191, 0.48) 6px 0px 0px 0px, rgba(255, 255, 255, 0.8) -6px 0px 0px 0px;

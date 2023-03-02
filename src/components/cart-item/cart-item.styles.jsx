@@ -21,16 +21,17 @@ export const CartItemContainer = styled.div`
   }
 `;
 
-export const symbolContainer = styled.div`
+export const SymbolContainer = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 `
 
-export const spanContanier = styled.span`
-  margin: 5px;
-  padding: 5px;
-`
+export const SpanContanier = styled.div`
+  text-align: center;
+  width:25px;
+  padding: auto;
+`;
 
 export const ItemDetails = styled.div`
   width: 70%;

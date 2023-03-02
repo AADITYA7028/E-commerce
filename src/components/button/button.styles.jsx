@@ -7,7 +7,7 @@ export const BaseButton = styled.button`
   line-height: 50px;
   /* padding: 0 35px 0 35px; */
   font-size: 15px;
-  background-color: black;
+  background-color: #343a40;
   color: white;
   text-transform: uppercase;
   font-weight: bolder;
@@ -19,13 +19,14 @@ export const BaseButton = styled.button`
   transition: all 0.5s;
 
   &:hover {
-    background-color: white;
+    background-color: #e9ecef;
     color: black;
     border: 1px solid black;
   }
 
   @media screen and (max-width: 800px){
     font-size: 14px;
+    min-width: 140px;
   }
 `;
 
@@ -39,21 +40,20 @@ export const GoogleSignInButton = styled(BaseButton)`
   &:hover {
     border: none;
     border-radius: 15px;
-    color: #357ae8;
-    box-shadow: 0 0 10px #357ae8;
+    color: #212529;
+    box-shadow: 0 0 10px #adb5bd;
   }
 `;
 
 export const invertedButton = styled(BaseButton)`
   background-color: white;
   color: black;
-  border: 1px solid black;
   transition: all 0.5s; 
-
+  border: 1px solid #adb5bd;
   &:hover {
-    background-color: black;
+    background-color: #adb5bd;
     color: white;
-    border: none;
+    border: 1px solid white;
   }
 `;
 

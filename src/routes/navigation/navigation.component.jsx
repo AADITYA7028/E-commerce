@@ -1,6 +1,6 @@
 import {NavContainer, NavLink, NavLinks, LogoContainer} from "./navigation.styles";
 import { Outlet } from "react-router-dom";
-import { ReactComponent as Logo} from "../../assets/Logo.svg"
+import { ReactComponent as Logo} from "../../assets/Logo.svg";
 import { useSelector , useDispatch} from "react-redux";
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";

@@ -7,11 +7,15 @@ export const ProductCartContainer = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
+
   img {
     width: 100%;
     height: 95%;
     object-fit: cover;
     margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-sizing: border-box;
   }
   button {
     width: 80%;
@@ -38,7 +42,8 @@ export const ProductCartContainer = styled.div`
   }
 
   @media screen and (max-width: 800px){
-    width: 40vw;
+    width: 45vw;
+    margin-bottom:15px;
   }
 `;
 

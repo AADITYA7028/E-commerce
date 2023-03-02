@@ -2,8 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     body{
-        /* font-family: "Open Sans Condensed"; */
-        padding: 20px 40px;
+        font-family: 'Mukta', sans-serif;
+        padding: 0 40px;
+        background-color: #edf2f4;
 
         @media screen and (max-width: 800px){
             padding: 10px;

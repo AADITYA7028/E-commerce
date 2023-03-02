@@ -1,4 +1,4 @@
-import { CartItemContainer, ItemDetails ,symbolContainer ,spanContanier} from './cart-item.styles';
+import { CartItemContainer, ItemDetails ,SymbolContainer ,SpanContanier} from './cart-item.styles';
 import { useDispatch , useSelector} from 'react-redux';
 import { selectCartItems } from '../../store/cart/cart.selector';
 import { clearItemFromCart, addItemToCart, removeItemFromCart } from '../../store/cart/cart.action';
@@ -17,12 +17,14 @@ const CartItem = ({ cartItem }) => {
       <ItemDetails>
         <span>{name}</span>
         {smallScreen && 
-        <symbolContainer>
-          <spanContanier onClick={removeItemHandler}>&#10094;</spanContanier>
-          <spanContanier>{quantity}</spanContanier>
-          <spanContanier onClick={addItemHandler}>&#10095;</spanContanier>
-          <spanContanier onClick={clearItemHandler}>&#10005;</spanContanier>
-        </symbolContainer>
+        <SymbolContainer>
+          <span style={{display: "flex"}}>
+            <SpanContanier onClick={removeItemHandler}>&#10094;</SpanContanier>
+            <SpanContanier>{quantity}</SpanContanier>
+            <SpanContanier onClick={addItemHandler}>&#10095;</SpanContanier>
+          </span>
+          <SpanContanier onClick={clearItemHandler}>&#10005;</SpanContanier>
+        </SymbolContainer>
         }
         <span>
           {!smallScreen && quantity} x ${price}

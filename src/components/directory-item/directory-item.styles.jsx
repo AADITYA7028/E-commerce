@@ -11,6 +11,7 @@ export const BackgroundImage = styled.div`
 export const Body = styled.div`
   height: 90px;
   padding: 0 25px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +19,7 @@ export const Body = styled.div`
   background-color: white;
   opacity: 0.7;
   position: absolute;
+  
   h2 {
     font-weight: bold;
     margin: 0 6px 0;
@@ -29,6 +31,10 @@ export const Body = styled.div`
     font-weight: lighter;
     font-size: 16px;
   }
+
+  @media screen and (max-width: 480px){
+    max-width: 130px;
+  }
 `;
 
 export const DirectoryItemContainer = styled.div`
@@ -39,6 +45,7 @@ export const DirectoryItemContainer = styled.div`
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  border-radius: 25px;
   margin: 0 7.5px 15px;
   overflow: hidden;
   &:first-child {
