@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# E-commerce web application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The "E-commerce web application" is a clothing website built with ReactJS and various other technologies. Its purpose is to serve as a platform for selling clothing products such as hats, t-shirts, shoes, jackets, and more. The project aims to Learn ReactJS through practical application.
 
 ## Available Scripts
 
-In the project directory, you can run:
+Key Features:
+1. User Authentication: The application implements user authentication, and Firebase is used along with Google Sign-In for handling the authentication process.
+2. Product Listing: The website allows for the listing and showcasing of clothing products.
+3. Shopping Cart Functionality: Users can add items to their shopping cart and manage their selections.
+4. Payment Integration: Stripe API is used for payment processing, enabling customers to make purchases securely.
+5. Server less Functions: As there is no dedicated server developed for the application, Netlify's server less functions are utilized for Stripe integration.
+6. Persistence : Redux Persist simplifies the process of persisting and rehydrating the Redux store, providing a seamless user experience by remembering the user's shopping cart items or login status across sessions.
+7. Netlify: Netlify is a web development platform that offers hosting, continuous deployment, and serverless functions. The e-commerce project is hosted on Netlify, providing a reliable and scalable infrastructure for deploying and serving the web application.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By building this e-commerce project, you will gain hands-on experience in developing a ReactJS-based web application with essential features like user authentication, product listing, shopping cart functionality, and payment integration. It provides an opportunity to work with popular technologies and understand their implementation in real-world scenarios.
