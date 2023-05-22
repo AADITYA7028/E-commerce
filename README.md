@@ -2,7 +2,7 @@
 
 The "E-commerce web application" is a clothing website built with ReactJS and various other technologies. Its purpose is to serve as a platform for selling clothing products such as hats, t-shirts, shoes, jackets, and more. The project aims to Learn ReactJS through practical application.
 
-## Available Scripts
+## Description
 
 Key Features:
 1. User Authentication: The application implements user authentication, and Firebase is used along with Google Sign-In for handling the authentication process.
